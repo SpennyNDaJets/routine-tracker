@@ -16,7 +16,7 @@ type ItemList struct {
 
 func (i *Item) Bind(r *http.Request) error {
   if i.Name == "" {
-  	return fmt.Errorf("name is a required field")
+    return fmt.Errorf("name is a required field")
   }
   return nil
 }

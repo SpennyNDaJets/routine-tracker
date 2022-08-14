@@ -11,7 +11,7 @@ services:
       - data:/var/lib/postgresql/data
   server:
     build:
-      context: .
+      context: ./server
       dockerfile: Dockerfile
     env_file: .env
     depends_on:
@@ -28,7 +28,7 @@ services:
     links:
       - database
     volumes:
-      - ./db/migrations:/tmp/migrations
+      - ./server/db/migrations:/tmp/migrations
   create-migration:
     <<: *basemigrate
     entrypoint: migrate create -dir /tmp/migrations -ext sql

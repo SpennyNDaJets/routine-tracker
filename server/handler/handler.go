@@ -3,7 +3,7 @@ import (
   "net/http"
   "github.com/go-chi/chi"
   "github.com/go-chi/render"
-  "github.com/SpennyNDaJets/routine-tracker/db"
+  "github.com/SpennyNDaJets/routine-tracker/server/db"
 )
 
 var dbInstance db.Database

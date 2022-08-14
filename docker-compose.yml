@@ -20,6 +20,16 @@ services:
       - default
     ports:
       - "8080:8080"
+  web-client:
+    build:
+      context: ./web-client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    volumes:
+      - ./web-client:/usr/src/routine-tracker/web-client
+      - /usr/src/routine-tracker/web-client/node_modules
   migrate: &basemigrate
     profiles: ["tools"]
     image: migrate/migrate

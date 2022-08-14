@@ -6,4 +6,15 @@ This app is created with:
 - Golang Server
 - PostgreSQL Database
 
-Getting Started: Coming soon
+Getting Started:
+1. Update your .env file with the variables from .env.example
+2. Start with compose
+```
+set -a
+source .env
+docker-compose up
+```
+3. Run migrations
+```
+docker compose --profile tools run migrate
+```

@@ -2,8 +2,8 @@ package main
 import (
   "context"
   "fmt"
-  "github.com/SpennyNDaJets/routine-tracker/db"
-  "github.com/SpennyNDaJets/routine-tracker/handler"
+  "github.com/SpennyNDaJets/routine-tracker/server/db"
+  "github.com/SpennyNDaJets/routine-tracker/server/handler"
   "log"
   "net"
   "net/http"

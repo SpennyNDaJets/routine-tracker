@@ -1,7 +1,7 @@
 package db
 import (
   "database/sql"
-  "github.com/SpennyNDaJets/routine-tracker/models"
+  "github.com/SpennyNDaJets/routine-tracker/server/models"
 )
 
 func (db Database) GetAllItems() (*models.ItemList, error) {

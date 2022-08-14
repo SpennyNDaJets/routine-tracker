@@ -1,4 +1,4 @@
-module github.com/SpennyNDaJets/routine-tracker
+module github.com/SpennyNDaJets/routine-tracker/server
 
 go 1.18
 
